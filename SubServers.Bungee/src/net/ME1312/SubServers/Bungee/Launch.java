@@ -57,7 +57,7 @@ public final class Launch {
                 System.out.println("Java " + Platform.getJavaVersion() + ((!Platform.getJavaArchitecture().equals("unknown"))?" [" + Platform.getJavaArchitecture() + ']':"") + ',');
                 if (galaxi != null) System.out.println("GalaxiEngine v" + galaxi.toExtendedString() + ((galaxibuild != null)?" (" + galaxibuild + ')':"") + ',');
                 System.out.println("BungeeCord" + net.md_5.bungee.Bootstrap.class.getPackage().getImplementationVersion() + ((patched)?" [Patched]":"") + ',');
-                System.out.println("SubServers.Bungee v" + SubProxy.version.toExtendedString() + ((SubProxy.class.getPackage().getSpecificationTitle() != null)?" (" + SubProxy.class.getPackage().getSpecificationTitle() + ')':""));
+                System.out.println("DuckCaller.net SubServers v" + SubProxy.version.toExtendedString() + ((SubProxy.class.getPackage().getSpecificationTitle() != null)?" (" + SubProxy.class.getPackage().getSpecificationTitle() + ')':""));
                 System.out.println("");
             } else {
                 boolean gb = Util.getDespiteException(() -> Class.forName("net.md_5.bungee.util.GalaxiBungeeInfo").getMethod("get").getReturnType().equals(Class.forName("net.ME1312.Galaxi.Plugin.PluginInfo")), false);
@@ -66,12 +66,12 @@ public final class Launch {
                             Util.reflect(net.md_5.bungee.log.BungeeLogger.class.getMethod("get", String.class), null, "SubServers"), "net.ME1312.SubServers.Bungee.");
                 } else {
                     System.out.println("");
-                    System.out.println("*******************************************");
-                    System.out.println("***  Warning: this build is unofficial  ***");
-                    System.out.println("***                                     ***");
-                    System.out.println("*** Please report all issues to ME1312, ***");
-                    System.out.println("***   NOT the Spigot Team. Thank You!   ***");
-                    System.out.println("*******************************************");
+                    System.out.println("***********************************************");
+                    System.out.println("***    Warning: this build is unofficial    ***");
+                    System.out.println("***                                         ***");
+                    System.out.println("*** Please report all issues to DuckCaller, ***");
+                    System.out.println("***     NOT the Spigot Team. Thank You!     ***");
+                    System.out.println("***********************************************");
                     try {
                         if (net.md_5.bungee.BungeeCord.class.getPackage().getSpecificationVersion() != null) {
                             Date date = (new SimpleDateFormat("yyyyMMdd")).parse(net.md_5.bungee.BungeeCord.class.getPackage().getSpecificationVersion());
