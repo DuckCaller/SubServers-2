@@ -58,8 +58,8 @@ public final class Launch {
                 System.out.println("*******************************************");
                 System.out.println("***  Warning: this build is unofficial  ***");
                 System.out.println("***                                     ***");
-                System.out.println("*** Please report all issues to ME1312, ***");
-                System.out.println("***   NOT the Spigot Team. Thank You!   ***");
+                System.out.println("*** Please report all issues to Pastor, ***");
+                System.out.println("***              Thank You!             ***");
                 System.out.println("*******************************************");
                 try {
                     if (net.md_5.bungee.BungeeCord.class.getPackage().getSpecificationVersion() != null) {
